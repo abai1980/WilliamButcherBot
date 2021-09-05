@@ -55,7 +55,7 @@ bot_start_time = time.time()
 
 # MongoDB client
 print("[INFO]: INITIALIZING DATABASE")
-mongo_client = MongoClient(MONGO_URI, MONGO_PORT)
+mongo_client = MongoClient(MONGO_DB_URI)
 db = mongo_clinet.wbb
 
 async def load_sudoers():
